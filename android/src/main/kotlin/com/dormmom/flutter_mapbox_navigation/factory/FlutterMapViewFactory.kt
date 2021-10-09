@@ -714,7 +714,7 @@ class FlutterMapViewFactory :
     private fun enableLocationComponent(@NonNull loadedMapStyle: Style) {
         if (PermissionsManager.areLocationPermissionsGranted(context)) {
             val customLocationComponentOptions = LocationComponentOptions.builder(context)
-                    .pulseEnabled(true)
+                    .pulseEnabled(false)
                     .build()
             mapBoxMap?.locationComponent?.let { locationComponent ->
                 try {
